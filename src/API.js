@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const API_URL = 'http://localhost:1337/api';
-const API_URL = 'https://map-log.herokuapp.com/api';
+const API_URL = 'http://localhost:1337/api';
+// const API_URL = 'https://map-log.herokuapp.com/api';
 
 export const getAuth = axios.get(`${API_URL}/get-user`, {
     headers: {

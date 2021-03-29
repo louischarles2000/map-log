@@ -25,7 +25,7 @@ const Form = props => {
             dispatch(updateFormFieldValue('longitude', props.longitude));
             dispatch(updateFormFieldValue('latitude', props.latitude));
         }
-    }, []);
+    }, [dispatch, props.latitude, props.longitude, props.oldData, state.isEditing, state.viewport.zoom]);
 
     
     const handleSubmit = async e => {
@@ -58,7 +58,7 @@ const Form = props => {
     
     const isValid = () => {
         let valid = false;
-        if(state.formEntryData.image !== '' && state.formEntryData.title !== '', state.formEntryData.comments !== ''){
+        if(state.formEntryData.image !== '' && state.formEntryData.title !== '' && state.formEntryData.comments !== ''){
             valid = true;
         }else if(props.oldData !== state.formEntryData){
             valid = false;

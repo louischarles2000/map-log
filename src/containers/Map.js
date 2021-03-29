@@ -32,7 +32,7 @@ const Map = ({ children }) => {
         return () => {
             clearInterval();
         }
-    }, []);
+    }, [dispatch, state.isAuthenticated]);
     
     const getViewPort = nextViewport => {
         const view = {

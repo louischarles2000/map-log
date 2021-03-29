@@ -69,7 +69,7 @@ const UserInfo = () => {
   // const [collapse, setCollapse] = React.useState(false);
   const [values, setValues] = React.useState({
     collapseUser: false,
-    entriesCollapse: false
+    entriesCollapse: true
   });
 
   const handleValueChange = (name, value) => {
