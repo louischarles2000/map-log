@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:1337/api';
-// const API_URL = 'https://map-log.herokuapp.com/api';
+const API_URL = process.env.NODE_ENV === 'production' ? process.env.API_URL : process.env.DEV_API;
 
 export const getAuth = axios.get(`${API_URL}/get-user`, {
     headers: {
