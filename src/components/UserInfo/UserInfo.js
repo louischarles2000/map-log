@@ -107,7 +107,7 @@ const UserInfo = () => {
       <List>
         <ListItem button={false}>
           <ListItemIcon><img alt="TravelLog" src={logo} style={{ width: 30, height: 30 }} /></ListItemIcon>
-          <ListItemText primary={<Typography variant="h6">TravelLog</Typography>} />
+          <ListItemText primary={<Typography variant="h6">MapLogs</Typography>} />
           <IconButton onClick={() => dispatch(toggleDrawer(openDrawer))}>
             {theme.direction === 'ltr' ? <ChevronLeft color="primary"/> : <ChevronRight />}
           </IconButton>
